@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">loginform</string>
+    <string name="password">password</string>
+    <string name="register">register</string>
+    <string name="already_have_an_account">already have an account</string>
+    <string name="todo">TODO</string>
+</resources>
