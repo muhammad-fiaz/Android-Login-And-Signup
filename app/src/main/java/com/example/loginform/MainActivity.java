@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.window.SplashScreen;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -17,14 +18,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button) findViewById(R.id.register_button_register);
+        Button button = (Button) findViewById(R.id.already_have_an_account_text_view);
         button.setOnClickListener(new View.OnClickListener() {
+
             public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, loginActivity.class);
+                startActivity(intent);
+                finish();
                 // Do something in response to button click
-                Log.v("MainActivity","Register Button Clicked");
+
             }
-
-
         });
 
     }
